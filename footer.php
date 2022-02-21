@@ -13,7 +13,7 @@ wp_nav_menu(array(
 
                     "link_before"=>$icone)); ?>
 </footer>
-
+<?php wp_footer(); ?>
 </body>
 
 </html>
