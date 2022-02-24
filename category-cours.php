@@ -14,7 +14,7 @@
                         $sigleCours = substr($titre, 0, 7);
                         $descCours = get_the_excerpt();
                         ?>
-                        <?php the_post_thumbnail("medium"); ?>
+                        <?php the_post_thumbnail("thumbnail"); ?>
                         <?php get_permalink(); ?>
                         <h3 class="cours__titre">
                             <a href="<?php echo get_permalink(); ?>">

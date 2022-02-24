@@ -1,0 +1,14 @@
+.recherche{
+    width: 300px;
+    &__input{
+        background-color: rgba(#000,.1);
+    }
+    &__bouton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+
+        }
+    }
+}

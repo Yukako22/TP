@@ -2,6 +2,7 @@
     background-color: $color__background-header;
     color: $color__font-header;
     padding-left: 10px;
+    display: flex;
 
     .header__titre {
       font-size: 3em;
@@ -11,4 +12,10 @@
       font-size: 1.5rem;
       font-family: $font__main;
     }
+    .util{
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+    }
   }
+  

@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
 theme name: lab-5 gr2 Boudreau_alex
-Author: Eddy martin
-Author URI: https://github.com/eddytuto
-Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Author: Alex Boudreau
+Author URI: https://github.com/Yukako22
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/Yukako22/TP.git
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -371,11 +371,11 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: #1435eb;
+  color: #c014eb;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #d4e119;
+  color: #c686e4;
 }
 
 .site__footer a:focus {
@@ -387,15 +387,15 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #f06a6a;
+  color: #d16af0;
 }
 
 .header__titre a:visited {
-  color: #ff5e00;
+  color: #8f6d9c;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #c0341b;
+  color: #c01b89;
 }
 
 .header__titre a:focus {
@@ -410,11 +410,10 @@ a:hover, a:active {
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
-  color: white;
   padding: 10px 15px;
-  background-color: #d4a816;
+  background-color: #d416cb;
   border-radius: 5px;
-  box-shadow: #39443e 1px -1px 10px;
+  box-shadow: #c504cc 1px -1px 10px;
 }
 
 .formation {
@@ -435,7 +434,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-image: url("image/poulet.jpg");
+  background-image: url("image/cupcake.jpg");
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -474,9 +473,10 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #6d291d;
+  background-color: #3a116e;
   color: #fa9292;
   padding-left: 10px;
+  display: flex;
 }
 
 .site__header .header__titre {
@@ -487,6 +487,12 @@ COMPOSANTES
 .site__header .header__description {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.site__header .util {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
 }
 
 #burger {
@@ -526,7 +532,7 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #ca8607;
+  background-color: #c592e3;
 }
 
 .menu-item a:hover {
@@ -544,7 +550,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #813908;
+  background-color: #3a116e;
   padding: 15px;
 }
 
@@ -569,7 +575,7 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
-  color: #d4e119;
+  color: #c686e4;
 }
 
 .footer__titre,
@@ -585,15 +591,25 @@ COMPOSANTES
 }
 
 .site__main {
-  background-image: url("image/poulet.jpg");
-}
-
-.article {
-  color: white;
+  background-image: url("image/cupcake.jpg");
 }
 
 .article__contenu {
   display: flex;
+}
+
+.recherche {
+  width: 300px;
+}
+
+.recherche__input {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.recherche__bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------------------------------------------------
@@ -639,7 +655,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__header {
   grid-area: header;
-  background-color: #6d291d;
+  background-color: #3a116e;
 }
 
 .site__barre {
@@ -649,12 +665,12 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: #d4a816;
+  background-color: #d416cb;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #813908;
+  background-color: #3a116e;
 }
 
 .site {
