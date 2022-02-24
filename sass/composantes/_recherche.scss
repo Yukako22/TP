@@ -1,14 +1,25 @@
 .recherche{
-    width: 300px;
-    &__input{
-        background-color: rgba(#000,.1);
-    }
-    &__bouton{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        svg{
+    display: flex;
+    background-color: rgba(207, 8, 174, 0.432);
+    width: 200px;
+    position: relative;
 
-        }
+&input{
+    background-color: transparent;
+    width: 100%;
+}
+
+&button{
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    svg{
+
     }
+}
 }
