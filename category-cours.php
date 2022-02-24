@@ -14,7 +14,13 @@
                         $sigleCours = substr($titre, 0, 7);
                         $descCours = get_the_excerpt();
                         ?>
-                        <h3 class="cours__titre"> <?= $titreFiltreCours; ?></h3>
+                        <?php the_post_thumbnail("medium"); ?>
+                        <?php get_permalink(); ?>
+                        <h3 class="cours__titre">
+                            <a href="<?php echo get_permalink(); ?>">
+                            <?= $titreFiltreCours; ?>
+                            </a>
+                            </h3>
                         <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
                         <p class="cours__desc"> <?= $descCours; ?></p>

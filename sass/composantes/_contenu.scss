@@ -1,5 +1,5 @@
 .site__main {
-    
+    color: white;
     padding: 10px 15px;
     background-color: $color__background-main;
     border-radius: 5px;
@@ -7,6 +7,7 @@
 }
 
 .formation {
+    
     display: flex;
     flex-direction: column;
 
@@ -22,7 +23,8 @@
     }
     
     &__cours {
-        background-color: $color__background-cours;
+        
+        background-image: url("image/poulet.jpg");
         box-shadow: rgb(57, 64, 68) 1px -1px 10px;
         border-radius: 5px;
         margin: 10px;

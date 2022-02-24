@@ -375,7 +375,7 @@ a:hover, a:active {
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #19e123;
+  color: #d4e119;
 }
 
 .site__footer a:focus {
@@ -391,11 +391,11 @@ a:hover, a:active {
 }
 
 .header__titre a:visited {
-  color: #7a49d4;
+  color: #ff5e00;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #8be58f;
+  color: #c0341b;
 }
 
 .header__titre a:focus {
@@ -410,8 +410,9 @@ a:hover, a:active {
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
+  color: white;
   padding: 10px 15px;
-  background-color: #d5e6f1;
+  background-color: #d4a816;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -434,7 +435,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #d1e9ff;
+  background-image: url("image/poulet.jpg");
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -473,7 +474,7 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #6faee2;
+  background-color: #6d291d;
   color: #fa9292;
   padding-left: 10px;
 }
@@ -521,11 +522,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #8293e3;
+  background-color: #ca8607;
 }
 
 .menu-item a:hover {
-  background-color: #2832b8;
+  background-color: #c10b0b;
 }
 
 @media screen and (min-width: 800px) {
@@ -539,7 +540,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #07143b;
+  background-color: #813908;
   padding: 15px;
 }
 
@@ -564,7 +565,7 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
-  color: #19e123;
+  color: #d4e119;
 }
 
 .footer__titre,
@@ -572,6 +573,23 @@ COMPOSANTES
 .footer__author {
   color: #ffcabc;
   text-align: center;
+}
+
+.erreur-404 h1 {
+  font-size: 5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.site__main {
+  background-image: url("image/poulet.jpg");
+}
+
+.article {
+  color: white;
+}
+
+.article__contenu {
+  display: flex;
 }
 
 /* ---------------------------------------------------------
@@ -611,13 +629,13 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #dae0f1;
+  background-color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #6faee2;
+  background-color: #6d291d;
 }
 
 .site__barre {
@@ -627,12 +645,12 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: #d5e6f1;
+  background-color: #d4a816;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #07143b;
+  background-color: #813908;
 }
 
 .site {
