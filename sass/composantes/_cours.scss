@@ -4,3 +4,34 @@
         display:flex;
     }
 }
+
+
+.formation__cours{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0 20px;
+    width: 100%;
+
+    @media  screen and (min-width : $largeur__media-tablette) {
+        width : 40%;
+    }
+    @media  screen and (min-width : $largeur__media-desktop) {
+        width : 25%;
+    }
+
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #72716d;
+}
+
+
+
+.formation__cours:hover{
+    box-shadow: 5px 15px 15px rgba(233, 233, 233, 0.6);
+    cursor: pointer;
+}
+
+
+
+
+
