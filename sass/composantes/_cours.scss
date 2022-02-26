@@ -13,10 +13,10 @@
     padding: 0 20px;
     width: 100%;
 
-    @media  screen and (min-width : $largeur__media-tablette) {
+    @media  screen and (min-width : $largeur__media--tablette) {
         width : 40%;
     }
-    @media  screen and (min-width : $largeur__media-desktop) {
+    @media  screen and (min-width : $largeur__media--desktop) {
         width : 25%;
     }
 

@@ -555,7 +555,7 @@ COMPOSANTES
   background-color: #3a116e;
   padding: 15px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -584,6 +584,18 @@ COMPOSANTES
   color: #c686e4;
 }
 
+@media screen and (min-width: 800px) {
+  .site__footer {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .site__footer {
+    flex-direction: row;
+  }
+}
+
 .footer__titre,
 .footer__presentation,
 .footer__author {
@@ -598,6 +610,33 @@ COMPOSANTES
 
 .article__contenu {
   display: flex;
+}
+
+.formation__cours {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 0 20px;
+  width: 100%;
+  border: 2px solid black;
+  background-color: #72716d;
+}
+
+@media screen and (min-width: 800px) {
+  .formation__cours {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .formation__cours {
+    width: 25%;
+  }
+}
+
+.formation__cours:hover {
+  box-shadow: 5px 15px 15px rgba(233, 233, 233, 0.6);
+  cursor: pointer;
 }
 
 .recherche {

@@ -3,7 +3,7 @@
     background-color: $color__background-footer;
     padding: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
@@ -32,6 +32,12 @@
           }    
        }
     }
+    @media  screen and (min-width : $largeur__media--tablette) {
+      flex-direction: row;
+  }
+  @media  screen and (min-width : $largeur__media--desktop) {
+      flex-direction: row;
+  }
   }
 
 .footer__titre,
