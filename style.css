@@ -413,7 +413,7 @@ COMPOSANTES
   padding: 10px 15px;
   background-color: #d416cb;
   border-radius: 5px;
-  box-shadow: #c504cc 1px -1px 10px;
+  box-shadow: #960d9b 1px 3px 10px;
 }
 
 .formation {
@@ -477,6 +477,7 @@ COMPOSANTES
   color: #fa9292;
   padding-left: 10px;
   display: flex;
+  align-items: center;
 }
 
 .site__header .header__titre {
@@ -521,6 +522,7 @@ COMPOSANTES
   list-style-type: none;
   margin: 0;
   padding: 0;
+  box-shadow: #c504cc 1px 3px 10px;
 }
 
 .menu-item {
@@ -532,6 +534,7 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
+  border: 3px solid #6b0466;
   background-color: #c592e3;
 }
 
