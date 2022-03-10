@@ -2,24 +2,23 @@
 <footer class="site__footer">
     <!-- première rangé de colonne -->
     <div class="site__footer__colonne">
-        <section class="footer__article">
-            <h2>Titre 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti soluta vitae excepturi exercitationem dicta unde doloremque quisquam suscipit dolores nisi quos, quia expedita, reprehenderit illo commodi error tenetur quidem.</p>
+        <section class="footer__article">  	
+                <?php get_sidebar( 'footer_colonne_1' ); ?>
         </section>
         <section class="footer__adresse">
-        <p>3800 Rue Sherbrooke E</p>
-        <p>Montréal,QC</p>
-        <p>H1X 2A2</p>
+        <?php get_sidebar( 'footer_colonne_2' ); ?>
+        
         </section>
         <section class="footer__liens">
-        <?php wp_nav_menu(array(
-                    "menu"=>"Externe")); ?>
+        <?php get_sidebar( 'footer_colonne_3' ); ?>
+        
         </section>
     </div>
     <!-- section de plusieurs lignes -->
     <div class="site__footer__ligne">
         <section class="footer__description"></section>
         <section class="footer__nav"></section>
+        <section class="footer__sociaux"><?php get_sidebar( 'footer_ligne_1' ); ?></section>
         <section class="copyright"></section>
         <section class="footer__auteur"><h4>Fait par Alexandre Boudreau</h4></section>
     </div>

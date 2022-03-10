@@ -760,9 +760,23 @@ theme name: Lab 2 Lemieux Florence
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #520d73;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  z-index: -1;
+}
+
 .site__header {
   grid-area: header;
-  background-color: #3a116e;
+  background-color: rgba(58, 17, 110, 0.5);
 }
 
 .site__barre {
@@ -772,7 +786,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: #d416cb;
+  background-color: rgba(212, 22, 203, 0.5);
 }
 
 .site__footer {

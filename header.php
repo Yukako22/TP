@@ -15,13 +15,16 @@
 </head>
 <body  <?php body_class("site"); ?>>
 <header class="site__header">
+
     <h1 class="header__titre">
+    <?php echo get_custom_logo(); ?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    
             <?php bloginfo('name'); ?>
+            
     </h1>
         </a>
     <h2 class="header__description"><?php bloginfo('description'); ?></h2>
-    <secction class="util">
+    <section class="util">
         <div class="util__lien">
         <a href="">
         <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000000"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zm0 16a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
@@ -40,7 +43,7 @@
         </a>
         </div>
         <?php get_search_form(); ?>
-    </secction>
+    </section>
         
 </header>
 <section class="site__barre">
