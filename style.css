@@ -550,6 +550,12 @@ COMPOSANTES
   padding-left: 50px;
 }
 
+@media screen and (min-width: 700px) {
+  .menu {
+    padding-left: 0px;
+  }
+}
+
 .menu-item {
   margin: 0;
   padding: 0;
