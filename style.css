@@ -371,7 +371,7 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: #957a99;
+  color: #7b667f;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
@@ -423,7 +423,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: black;
+  color: white;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -521,8 +521,9 @@ COMPOSANTES
 
 #burger {
   position: absolute;
-  transition: transform .3s;
+  transition: transform .5s;
   transform: rotate(0);
+  cursor: pointer;
 }
 
 #chk-burger {
@@ -539,12 +540,14 @@ COMPOSANTES
 
 #chk-burger:checked ~ .menu-principal-container {
   display: block;
+  animation: anim-burger .4s ease-in;
 }
 
 .menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-left: 50px;
 }
 
 .menu-item {
@@ -561,7 +564,7 @@ COMPOSANTES
 }
 
 .menu-item a:hover {
-  background-color: #c10b0b;
+  background-color: #8657d1;
 }
 
 @media screen and (min-width: 700px) {
@@ -570,6 +573,15 @@ COMPOSANTES
   }
   .menu-principal-container {
     display: block;
+  }
+}
+
+@keyframes anim-burger {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -597,6 +609,13 @@ COMPOSANTES
   .site__footer__colonne section {
     flex: 0 0 30%;
   }
+}
+
+.site__footer__colonne .footer__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .site__footer__colonne .footer__adresse {
@@ -762,7 +781,7 @@ LAYOUT
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #051d29;
+  background-color: #1b0529;
 }
 
 .site__main {

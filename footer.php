@@ -4,6 +4,7 @@
     <div class="site__footer__colonne">
         <section class="footer__article">  	
                 <?php get_sidebar( 'footer_colonne_1' ); ?>
+                <?php get_search_form(); ?>
         </section>
         <section class="footer__adresse">
         <?php get_sidebar( 'footer_colonne_2' ); ?>

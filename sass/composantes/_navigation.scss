@@ -1,8 +1,9 @@
 
 #burger {
     position : absolute;
-    transition : transform .3s;
+    transition : transform .5s;
     transform : rotate(0);
+    cursor: pointer;
 }
 #chk-burger {
     display: none;
@@ -16,6 +17,7 @@
 }
 #chk-burger:checked ~ .menu-principal-container{
     display : block;
+    animation : anim-burger .4s ease-in;
 }
 
 
@@ -24,17 +26,20 @@
     list-style-type: none;
     margin : 0;
     padding :0;
+    padding-left: 50px;
     
     
 }
 .menu-item{
     margin:0;
     padding : 0;
+    
     a{
         display : block;
         text-decoration: none;
         padding : 4px;
         border: 3px solid rgb(107, 4, 102);
+        
         
         background-color: $color__background-link;
         &:hover {
@@ -51,6 +56,14 @@
         display : block;
     }
 
+}
+@keyframes anim-burger {
+    0% {
+      transform : translateY(-100vh);  
+    }
+    100% {
+        transform : translateY(0);  
+    }
 }
 
 
