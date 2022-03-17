@@ -423,7 +423,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #ebcac1;
+  color: black;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -458,14 +458,14 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #ebcac1;
+  color: black;
   margin: 5px 0px;
 }
 
 .cours__sigle {
-  font-size: 1.2rem;
-  color: #8a5353;
-  margin: 0;
+  font-size: 1.5rem;
+  color: black;
+  margin: 5px 0px;
 }
 
 .cours__description {

@@ -1,3 +1,9 @@
+@mixin important-text {
+    font-size: 1.5rem;
+    color: $color__font-main;
+    margin: 5px 0px;
+  }
+
 .site__main {
     
     padding: 10px 15px;
@@ -50,15 +56,11 @@
 
 
 .cours__titre {
-    font-size: 1.5rem;
-    color: $color__font-main;
-    margin: 5px 0px;
+    @include important-text;
 }
 
 .cours__sigle {
-    font-size: 1.2rem;
-    color: rgb(138, 83, 83);
-    margin: 0;
+    @include important-text;
 }
 
 .cours__description {
