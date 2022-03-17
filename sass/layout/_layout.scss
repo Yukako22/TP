@@ -1,11 +1,10 @@
-/*
-theme name: Lab 2 Lemieux Florence
-*/
+
 
 .site {
     //background-color: rgb(122, 176, 207);
     background-color: $color__background-body;
     font-family: $font__main;
+    
 }
 .home::after{
     content:"";

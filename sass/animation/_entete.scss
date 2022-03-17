@@ -1,26 +1,26 @@
 .animation{
     display : flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     &__bloc{
         display : flex;
         justify-content: center;
         align-items: center;
         width : 100px;
-        height : 100px;
-        border-radius: 50%;
-        background-color: rgb(17, 97, 247);
+        height : 30px;
+        border-radius: 20%;
+        background-color: rgb(0, 0, 0);
         color : #fff;
-        font-size: 3rem;
+        font-size: 1rem;
         animation : anim-entete 1s forwards;
     }
 }
 
 @keyframes anim-entete {
     0% {
-      transform : translateY(-100vh);  
+      transform : translateX(200vh);  
     }
     100% {
-        transform : translateY(0);  
+        transform : translateX(0);  
     }
 }

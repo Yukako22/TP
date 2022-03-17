@@ -36,11 +36,8 @@ function cidw_4w4_add_theme_support(){
         'height' => 100,
 
         'width'  => 100,
-
     ) );
-
 }
-
     add_action( 'after_setup_theme', 'cidw_4w4_add_theme_support');
 
 

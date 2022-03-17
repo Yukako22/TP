@@ -3,20 +3,42 @@
     color: $color__font-header;
     padding-left: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    
 
-    .header__titre {
-      font-size: 3em;
+    @media screen and (min-width:700px ) {
+        flex-direction: row;
+    }
+    &__titre{
+      display: flex;
+      justify-content: space-between;
+    }
+    .header__titre a {
+      font-size: clamp(1rem, 2vw,2rem);
       font-family: $font__titre;
+      color: $color__font-header;
+      padding-left: 10px;
+      
+      
     }
     .header__description {
-      font-size: 1.5rem;
+      font-size: clamp(1rem, 2vw,2rem);
       font-family: $font__main;
+      color: $color__font-header;
+      padding-left: 10px;
+      
     }
     .util{
       display: flex;
       flex-direction: column;
-      margin-left: auto;
+      align-items: center;
+
+      @media screen and (min-width:700px) {
+        margin-left: auto;
+        margin-right: 30px;
+      }
+      
       
     }
   }

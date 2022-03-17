@@ -367,11 +367,11 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #f40b0b;
+  color: white;
 }
 
 .site__footer a:visited {
-  color: #c014eb;
+  color: #957a99;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
@@ -444,7 +444,7 @@ COMPOSANTES
   padding: 10px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .formation__cours {
     width: 45%;
   }
@@ -474,26 +474,49 @@ COMPOSANTES
 
 .site__header {
   background-color: #3a116e;
-  color: #fa9292;
+  color: white;
   padding-left: 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.site__header .header__titre {
-  font-size: 3em;
+@media screen and (min-width: 700px) {
+  .site__header {
+    flex-direction: row;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site__header .header__titre a {
+  font-size: clamp(1rem, 2vw, 2rem);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: white;
+  padding-left: 10px;
 }
 
 .site__header .header__description {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding-left: 10px;
 }
 
 .site__header .util {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .site__header .util {
+    margin-left: auto;
+    margin-right: 30px;
+  }
 }
 
 #burger {
@@ -541,7 +564,7 @@ COMPOSANTES
   background-color: #c10b0b;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   #burger {
     display: none;
   }
@@ -550,68 +573,6 @@ COMPOSANTES
   }
 }
 
-/*.site__footer {
-    font-family: $font__titre;
-    background-color: $color__background-footer;
-    display: flex;
-    flex-direction: column;
-      &_colonne{
-        display: flex;
-        justify-content: space-between;
-        section{
-          display: flex;
-          flex-direction: column;
-          border: 1px solid white;
-          flex: 0 0 30%;
-        }
-        .footer__article{}
-        .footer__liens{}
-        .footer__adresse{}
-      }
-      &_ligne{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      &__menu{ // .site__footer__menu
-
-        &__ul{ // .site__footer__menu__ul
-            display : flex;
-            list-style-type: none;
-            justify-content: center;
-            .menu-item { // .site__footer__menu__ul .menu-item
-                margin : 10px 5px;
-              a{ // .site__footer__menu__ul .menu-item a
-                display : flex;
-                align-items: center;
-                padding : 3px;
-                  svg { // .site__footer__menu__ul .menu-item a svg
-                    color: $color__link__footer;
-                  }
-            
-                &:hover {
-                  svg { // .site__footer__menu__ul .menu-item a svg
-                    color: $color__link__footer-hover;
-                  }
-                }
-              }
-            }    
-        }
-      }
-      @media  screen and (min-width : $largeur__media--tablette) {
-        
-    }
-    @media  screen and (min-width : $largeur__media--desktop) {
-        
-    }
-    }
-
-.footer__titre,
-.footer__presentation,
-.footer__author {
-  color: $color__font-footer;
-  text-align: center;
-}*/
 .site__footer {
   display: flex;
   flex-direction: column;
@@ -627,9 +588,21 @@ COMPOSANTES
 
 .site__footer__colonne section {
   display: flex;
-  flex-direction: column;
-  border: 1px solid #ddd;
-  flex: 0 0 30%;
+  flex-direction: row;
+  border: 1px solid black;
+  flex: 0 0 25%;
+}
+
+@media screen and (min-width: 700px) {
+  .site__footer__colonne section {
+    flex: 0 0 30%;
+  }
+}
+
+.site__footer__colonne .footer__adresse {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .site__footer__ligne {
@@ -655,7 +628,7 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: #f40b0b;
+  color: white;
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
@@ -676,12 +649,12 @@ COMPOSANTES
   flex-direction: column;
   margin: 20px;
   padding: 0 20px;
-  width: 100%;
+  width: 80%;
   border: 2px solid black;
   background-color: #72716d;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .formation__cours {
     width: 40%;
   }
@@ -700,17 +673,24 @@ COMPOSANTES
 
 .recherche {
   display: flex;
-  background-color: rgba(207, 8, 174, 0.432);
-  width: 200px;
+  background-color: rgba(129, 7, 109, 0.432);
+  width: 300px;
   position: relative;
 }
 
-.rechercheinput {
+.recherche__input {
   background-color: transparent;
   width: 100%;
+  transition: background-color .25;
+  border: none;
+  outline: none;
 }
 
-.recherchebutton {
+.recherche__input:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.recherche__button {
   position: absolute;
   top: 0;
   right: 0;
@@ -719,12 +699,16 @@ COMPOSANTES
   justify-content: center;
 }
 
+.recherche__button svg {
+  color: #000;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 .animation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .animation__bloc {
@@ -732,29 +716,26 @@ ANIMATION
   justify-content: center;
   align-items: center;
   width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #1161f7;
+  height: 30px;
+  border-radius: 20%;
+  background-color: black;
   color: #fff;
-  font-size: 3rem;
+  font-size: 1rem;
   animation: anim-entete 1s forwards;
 }
 
 @keyframes anim-entete {
   0% {
-    transform: translateY(-100vh);
+    transform: translateX(200vh);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
-/*
-theme name: Lab 2 Lemieux Florence
-*/
 .site {
   background-color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -801,7 +782,7 @@ theme name: Lab 2 Lemieux Florence
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .site {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
