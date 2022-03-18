@@ -1,3 +1,4 @@
+//------------------------------------------------Animation de l'entete pouyr les mots clé-----------------------------------------
 .animation{
     display : flex;
     justify-content: space-around;
@@ -15,7 +16,6 @@
         animation : anim-entete 1s forwards;
     }
 }
-
 @keyframes anim-entete {
     0% {
       transform : translateX(200vh);  

@@ -1,3 +1,4 @@
+//----------------------Header-----------------------------
 .site__header {
     background-color: $color__background-header;
     color: $color__font-header;
@@ -5,41 +6,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
-    @media screen and (min-width:700px ) {
-        flex-direction: row;
-    }
+      @media screen and (min-width:700px ) {
+          flex-direction: row;
+      }
     &__titre{
       display: flex;
       justify-content: space-between;
     }
-    .header__titre a {
+.header__titre a {
       font-size: clamp(1rem, 2vw,2rem);
       font-family: $font__titre;
       color: $color__font-header;
       padding-left: 10px;
-      
-      
     }
-    .header__description {
+.header__description {
       font-size: clamp(1rem, 2vw,2rem);
       font-family: $font__main;
       color: $color__font-header;
       padding-left: 10px;
-      
     }
-    .util{
+//-------------------SVG---------------------    
+.util {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      @media screen and (min-width:700px) {
-        margin-left: auto;
-        margin-right: 30px;
-      }
+        @media screen and (min-width:700px) {
+          margin-left: auto;
+          margin-right: 30px;
+        }
       
       
     }
-  }
+}
   

@@ -18,6 +18,7 @@ VARIABLES
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
+/*------------------------Recherche*/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -698,7 +699,7 @@ COMPOSANTES
 
 .recherche {
   display: flex;
-  background-color: rgba(129, 7, 109, 0.432);
+  background-color: #c592e3;
   width: 300px;
   position: relative;
 }

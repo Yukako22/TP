@@ -1,10 +1,6 @@
-
-
 .site {
-    //background-color: rgb(122, 176, 207);
     background-color: $color__background-body;
-    font-family: $font__main;
-    
+    font-family: $font__main; 
 }
 .home::after{
     content:"";
@@ -19,29 +15,22 @@
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     z-index: -1;
 }
-
-
-
 .site__header{
     grid-area: header;  
     background-color: rgba($color__background-header,.5);
 }
-
 .site__barre{
     grid-area: sidebar;
     background-color: $color__background-barre;
 }
-
 .site__main{
     grid-area: main;
     background-color: rgba($color__background-main,.5);
 }
-
 .site__footer{
     grid-area: footer;
     background-color: $color__background-footer;
 }
-
 .site {
 	display: grid;
     gap : 10px;
@@ -52,7 +41,6 @@
 		"main"
 		"footer";
 }
-
 @media screen and (min-width : $largeur__media--tablette)
 {
     .site {
