@@ -1,0 +1,34 @@
+//-------------Scss pour l'interieur des cartes sur les différentes formations
+.article{
+    
+    &__contenu{
+        display:flex;
+    }
+}
+.formation__cours{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0 20px;
+    width:80%;
+    @media  screen and (min-width : $largeur__media--tablette) {
+        width : 40%;
+    }
+    @media  screen and (min-width : $largeur__media--desktop) {
+        width : 25%;
+    }
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #ffcd05;
+}
+//-----------------------Ajout de bordure si on met la souris sur la case-----------------------
+.formation__cours:hover{
+    box-shadow: 5px 15px 15px rgba(233, 233, 233, 0.6);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
