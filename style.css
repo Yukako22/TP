@@ -671,9 +671,9 @@ COMPOSANTES
 
 .site__footer__colonne section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border: 1px solid black;
-  flex: 0 0 25%;
+  flex: 0 0 15%;
 }
 
 @media screen and (min-width: 700px) {
@@ -808,10 +808,49 @@ COMPOSANTES
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: black;
+  background-color: #8e44ca;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
+  color: black;
+}
+
+.menu-menu_accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 50px;
+}
+
+@media screen and (min-width: 700px) {
+  .menu-menu_accueil-container .menu {
+    padding-left: 0px;
+  }
+}
+
+.menu-menu_accueil-container .menu-item {
+  margin: 0 10px;
+  background-color: #c592e3;
+  width: 20%;
+  flex: 0 0 20%;
+}
+
+.menu-menu_accueil-container .menu-item a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+  border: 3px solid #6b0466;
+  background-color: #c592e3;
+}
+
+.menu-menu_accueil-container .menu-item a:hover {
+  background-color: #8e44ca;
+}
+
+.menu-menu_accueil-container .menu-item a a {
   color: black;
 }
 
