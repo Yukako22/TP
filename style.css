@@ -814,7 +814,8 @@ COMPOSANTES
   color: black;
 }
 
-.menu-menu_accueil-container .menu {
+.menu-menu_accueil-container .menu,
+.menu-evenement-container .menu {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
@@ -824,19 +825,22 @@ COMPOSANTES
 }
 
 @media screen and (min-width: 700px) {
-  .menu-menu_accueil-container .menu {
+  .menu-menu_accueil-container .menu,
+  .menu-evenement-container .menu {
     padding-left: 0px;
   }
 }
 
-.menu-menu_accueil-container .menu-item {
+.menu-menu_accueil-container .menu-item,
+.menu-evenement-container .menu-item {
   margin: 0 10px;
   background-color: #ffd000;
   width: 20%;
   flex: 0 0 20%;
 }
 
-.menu-menu_accueil-container .menu-item a {
+.menu-menu_accueil-container .menu-item a,
+.menu-evenement-container .menu-item a {
   color: black;
   display: block;
   text-decoration: none;
@@ -844,11 +848,13 @@ COMPOSANTES
   border: 3px solid #6b0466;
 }
 
-.menu-menu_accueil-container .menu-item a:hover {
+.menu-menu_accueil-container .menu-item a:hover,
+.menu-evenement-container .menu-item a:hover {
   background-color: #8e44ca;
 }
 
-.menu-menu_accueil-container .menu-item a a {
+.menu-menu_accueil-container .menu-item a a,
+.menu-evenement-container .menu-item a a {
   color: black;
 }
 
