@@ -635,7 +635,6 @@ COMPOSANTES
 
 .menu-item a:hover {
   background-color: #404040;
-  width: 100px;
   box-shadow: white 1px 3px 10px;
 }
 
@@ -810,6 +809,8 @@ COMPOSANTES
 
 .menu-categorie_cours-container .menu .menu-item:hover {
   background-color: #8e44ca;
+  width: 100px;
+  box-shadow: white 1px 3px 10px;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
