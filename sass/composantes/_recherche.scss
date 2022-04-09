@@ -1,12 +1,11 @@
 //--------------------Scss pour la barre de recherche du header et du footer 
 .recherche{
     display: flex;
-    background-color: $color__recherche;
-    width: 300px;
     position: relative;
+    box-shadow: rgb(150, 13, 155) 1px 3px 10px;
 
 &__input{
-    background-color: transparent;
+    background-color: $color__recherche;
     width: 100%;
     transition: background-color .25;
     border: none;

@@ -2,6 +2,11 @@
 .animation{
     display : flex;
     justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width:700px) {
+        flex-direction: row;
+      }
 
     &__bloc{
         display : flex;

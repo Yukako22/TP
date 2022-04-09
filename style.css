@@ -537,7 +537,7 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #b3b3b3;
+  background-color: #5e5e5e;
   color: white;
   padding-left: 10px;
   display: flex;
@@ -636,6 +636,7 @@ COMPOSANTES
 .menu-item a:hover {
   background-color: #404040;
   box-shadow: white 1px 3px 10px;
+  transform: scale(105%);
 }
 
 @media screen and (min-width: 700px) {
@@ -763,13 +764,12 @@ COMPOSANTES
 
 .recherche {
   display: flex;
-  background-color: black;
-  width: 300px;
   position: relative;
+  box-shadow: #960d9b 1px 3px 10px;
 }
 
 .recherche__input {
-  background-color: transparent;
+  background-color: black;
   width: 100%;
   transition: background-color .25;
   border: none;
@@ -808,7 +808,7 @@ COMPOSANTES
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: #8e44ca;
+  background-color: #333333;
   width: 100px;
   box-shadow: white 1px 3px 10px;
 }
@@ -830,6 +830,7 @@ COMPOSANTES
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   padding-left: 50px;
@@ -839,15 +840,26 @@ COMPOSANTES
   .menu-menu_accueil-container .menu,
   .menu-evenement-container .menu {
     padding-left: 0px;
+    flex-direction: row;
+  }
+  .menu-menu_accueil-container .menu:hover,
+  .menu-evenement-container .menu:hover {
+    transform: scale(102%);
   }
 }
 
 .menu-menu_accueil-container .menu-item,
 .menu-evenement-container .menu-item {
   margin: 0 10px;
+  margin-bottom: 30px;
   background-color: #a1a1a1;
-  width: 20%;
+  width: 30%;
   flex: 0 0 20%;
+}
+
+.menu-menu_accueil-container .menu-item:hover,
+.menu-evenement-container .menu-item:hover {
+  background-color: #333333;
 }
 
 .menu-menu_accueil-container .menu-item a,
@@ -857,11 +869,12 @@ COMPOSANTES
   text-decoration: none;
   padding: 1px;
   border: 3px solid #6b0466;
+  height: 100px;
 }
 
 .menu-menu_accueil-container .menu-item a:hover,
 .menu-evenement-container .menu-item a:hover {
-  background-color: #8e44ca;
+  background-color: #333333;
 }
 
 .menu-menu_accueil-container .menu-item a a,
@@ -875,6 +888,14 @@ ANIMATION
 .animation {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .animation {
+    flex-direction: row;
+  }
 }
 
 .animation__bloc {
@@ -923,7 +944,7 @@ LAYOUT
 
 .site__header {
   grid-area: header;
-  background-color: rgba(179, 179, 179, 0.5);
+  background-color: rgba(94, 94, 94, 0.5);
 }
 
 .site__barre {
