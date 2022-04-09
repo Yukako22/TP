@@ -22,7 +22,7 @@ add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
 function prefix_nav_description( $item_output, $item,  $args ) {
     if ( !empty( $item->description ) ) {
         $item_output = str_replace( $args->link_after . '</a>',
-        $args->link_after .'<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div>' .  '</a>',
+        $args->link_after .'<span class="menu-item-description">' . '</span><div class="menu-item-icone"></div>' .  '</a>',
               $item_output );
     }
     return $item_output;
@@ -115,19 +115,34 @@ function my_register_sidebars() {
  * @param : WP_Query $query
  */
 function cidw_4w4_pre_get_posts(WP_Query $query)
+
 {
 
-    $ordre = get_query_var('ordre');
-    $cle=get_query_var('cletri');
-    echo "------".$ordre."-------";
+    if(is_admin() || !is_main_query() || !is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu')))
 
-    if(!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))){
-        
-        $query->set('posts_per_page', -1);
-        $query->set('orderby', 'title');
-        $query->set('order',  'ASC');
-        
+    {
+        return $query;
+    }   
+    else
+    {
+        $ordre = get_query_var('ordre');
+
+        $cle = get_query_var('cletri');
+
+        $query->set('order',  $ordre);
+
+        $query->set('orderby', $cle);
+
+        // var_dump($query);
+        // die();
+        // $query->set('posts_per_page', -1);
+        return $query;
     }
+
+
+
+
+}
   /*if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
     {
     //$ordre = get_query_var('ordre');
@@ -139,7 +154,7 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
     // var_dump($query);
     // die();
    }*/
-}
+
 function cidw_4w4_query_vars($params){
     $params[] = "cletri";
     $params[] = "ordre";
@@ -151,6 +166,21 @@ add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
 //<pre_get_post> est un hook qui marque l'instant se situant entre la création de la requette
 // $query et de son execution. <pre_get_post> est notre dernière chance de modifier la requete
 add_filter('query_vars', 'cidw_4w4_query_vars' );
+
+
+/**
+ * Extraire le slug de la categorie url
+ * @param array $tableau
+ * @return string $slug
+ * 
+ * 
+ */
+
+ function trouve_la_categorie($tableau){
+     foreach($tableau as $cle){
+         if(is_category($cle))return($cle);
+     }
+ }
 
 
 ?>
