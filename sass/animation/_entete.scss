@@ -12,13 +12,19 @@
         display : flex;
         justify-content: center;
         align-items: center;
-        width : 100px;
+        width : 50%;
         height : 30px;
         border-radius: 20%;
+        margin-bottom: 5%;
         background-color: rgb(0, 0, 0);
         color : #fff;
         font-size: 1rem;
         animation : anim-entete 1s forwards;
+        @media screen and (min-width:700px) {
+            border-radius: 0%;
+            width : 20%;
+            box-shadow: rgb(150, 13, 155) 1px 3px 10px;
+          }
     }
 }
 @keyframes anim-entete {

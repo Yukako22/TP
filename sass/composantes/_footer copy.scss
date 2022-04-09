@@ -1,0 +1,71 @@
+//-----------------Page pour le pied de page--------------------------
+.site__footer {
+  display : flex;
+  flex-direction: column;
+  font-family: $font__titre;
+  background-color: $color__background-footer;
+  color: $color__font-footer;
+  @media screen and (min-width:700px) {
+    flex-direction: row;
+  }
+    &__colonne{
+      display : flex;
+      justify-content: space-between;
+      //-------------------Partie haute du pied de page ( les colonnes ) --------------------------
+    section {
+      display : flex;
+      flex-direction: column;
+      border : 1px solid rgb(0, 0, 0);
+      flex : 0 0 15%;
+      @media screen and (min-width:700px) {
+        flex : 0 0 30%;
+      }
+    }
+    //--------------------------------------Scss pour les différentes colonnes ( articles, lien et adresse ---------------------------------
+    .footer__article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer__lien{}
+    .footer__adresse{
+      display : flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  } 
+  //-----------------------------------------------Scss pour la deuxième partie du footer ( le menu et le copyright )
+    &__ligne{
+      display : flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__menu{ // .site__footer__menu
+
+      &__ul{ // .site__footer__menu__ul
+          display : flex;
+          list-style-type: none;
+          justify-content: center;
+          .menu-item { // .site__footer__menu__ul .menu-item
+              margin : 10px 5px;
+            a{ // .site__footer__menu__ul .menu-item a
+              display : flex;
+              align-items: center;
+              padding : 3px;
+                svg { // .site__footer__menu__ul .menu-item a svg
+                  color: $color__link__footer;
+                }
+          
+              &:hover {
+                svg { // .site__footer__menu__ul .menu-item a svg
+                  color: $color__link__footer-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+        
+
+}

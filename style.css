@@ -660,46 +660,32 @@ COMPOSANTES
 .site__footer {
   display: flex;
   flex-direction: column;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2b2b2b;
-  color: #ffcabc;
 }
 
-.site__footer__colonne {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 700px) {
+  .site__footer__colonne {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .site__footer__colonne section {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  flex: 0 0 15%;
-}
-
-@media screen and (min-width: 700px) {
-  .site__footer__colonne section {
-    flex: 0 0 30%;
-  }
-}
-
-.site__footer__colonne .footer__article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.site__footer__colonne .footer__adresse {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex: 0 0 30%;
 }
 
 .site__footer__ligne {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.site__footer {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #2b2b2b;
+  padding: 15px;
 }
 
 .site__footer__menu__ul {
@@ -718,12 +704,11 @@ COMPOSANTES
   padding: 3px;
 }
 
-.site__footer__menu__ul .menu-item a svg {
-  color: white;
-}
-
-.site__footer__menu__ul .menu-item a:hover svg {
-  color: black;
+.footer__titre,
+.footer__presentation,
+.footer__author {
+  color: #ffcabc;
+  text-align: center;
 }
 
 .erreur-404 h1 {
@@ -834,6 +819,7 @@ COMPOSANTES
   margin: 0;
   padding: 0;
   padding-left: 50px;
+  align-items: center;
 }
 
 @media screen and (min-width: 700px) {
@@ -902,13 +888,22 @@ ANIMATION
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 50%;
   height: 30px;
   border-radius: 20%;
+  margin-bottom: 5%;
   background-color: black;
   color: #fff;
   font-size: 1rem;
   animation: anim-entete 1s forwards;
+}
+
+@media screen and (min-width: 700px) {
+  .animation__bloc {
+    border-radius: 0%;
+    width: 20%;
+    box-shadow: #960d9b 1px 3px 10px;
+  }
 }
 
 @keyframes anim-entete {
