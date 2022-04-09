@@ -349,11 +349,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #fcfcfc;
 }
 
 a:visited {
-  color: #5c4033;
+  color: #5e5e5e;
 }
 
 a:hover, a:focus, a:active {
@@ -373,11 +373,11 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: #7b667f;
+  color: white;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #c686e4;
+  color: black;
 }
 
 .site__footer a:focus {
@@ -450,7 +450,7 @@ COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
   padding: 10px 15px;
-  background-color: #d416cb;
+  background-color: #373434;
   border-radius: 5px;
   box-shadow: #960d9b 1px 3px 10px;
 }
@@ -497,10 +497,9 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: aqua;
   background-position: 97% 10%;
   background-repeat: no-repeat;
-  box-shadow: #394044 1px -1px 10px;
+  box-shadow: #960d9b 1px 3px 10px;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -538,7 +537,7 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #3a116e;
+  background-color: #b3b3b3;
   color: white;
   padding-left: 10px;
   display: flex;
@@ -634,7 +633,7 @@ COMPOSANTES
 }
 
 .menu-item a:hover {
-  background-color: #8657d1;
+  background-color: #404040;
 }
 
 @media screen and (min-width: 700px) {
@@ -659,7 +658,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #3a116e;
+  background-color: #2b2b2b;
   color: #ffcabc;
 }
 
@@ -721,7 +720,7 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
-  color: #c686e4;
+  color: black;
 }
 
 .erreur-404 h1 {
@@ -740,7 +739,7 @@ COMPOSANTES
   padding: 0 20px;
   width: 80%;
   border: 2px solid black;
-  background-color: #ffcd05;
+  background-color: #413e3e;
 }
 
 @media screen and (min-width: 700px) {
@@ -762,7 +761,7 @@ COMPOSANTES
 
 .recherche {
   display: flex;
-  background-color: #c592e3;
+  background-color: black;
   width: 300px;
   position: relative;
 }
@@ -852,7 +851,7 @@ COMPOSANTES
   color: black;
   display: block;
   text-decoration: none;
-  padding: 4px;
+  padding: 1px;
   border: 3px solid #6b0466;
 }
 
@@ -900,7 +899,7 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: black;
+  background-color: #080202;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -913,29 +912,29 @@ LAYOUT
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #520d73;
+  background-color: black;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: rgba(58, 17, 110, 0.5);
+  background-color: rgba(179, 179, 179, 0.5);
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #1b0529;
+  background-color: black;
 }
 
 .site__main {
   grid-area: main;
-  background-color: rgba(212, 22, 203, 0.5);
+  background-color: rgba(55, 52, 52, 0.5);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #3a116e;
+  background-color: #2b2b2b;
 }
 
 .site {

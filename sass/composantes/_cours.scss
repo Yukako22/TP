@@ -19,7 +19,7 @@
         width : 25%;
     }
     border: 2px solid rgb(0, 0, 0);
-    background-color: #ffcd05;
+    background-color: $color__background-cours;
 }
 //-----------------------Ajout de bordure si on met la souris sur la case-----------------------
 .formation__cours:hover{
