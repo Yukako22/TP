@@ -11,14 +11,11 @@
     section {
       display : flex;
       flex-direction: column;
-      border : 1px solid rgb(0, 0, 0);
+      border : 3px solid rgb(0, 0, 0);
       
     }
     .footer__article{}
-    .footer__lien{
-      display: flex;
-      align-items: center;
-    }
+    .footer__lien{}
     .footer__adresse{}
   
   } 

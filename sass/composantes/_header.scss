@@ -13,12 +13,15 @@
       display: flex;
       justify-content: space-between;
     }
-.header__titre a {
+.header__titre {
+    a {
       font-size: clamp(1rem, 2vw,2rem);
       font-family: $font__titre;
       color: $color__font-header;
       padding-left: 10px;
+      
     }
+  }
 .header__description {
       font-size: clamp(1rem, 2vw,2rem);
       font-family: $font__main;
@@ -38,5 +41,7 @@
       
       
     }
+    
 }
+
   
