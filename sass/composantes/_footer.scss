@@ -1,41 +1,32 @@
+//---------------FOOTER-----------------
+
 .site__footer {
   display : flex;
   flex-direction: column;
-  
-  &__colonne{
-    
+  &__colonne{ 
     @media screen and (min-width:700px) {
       display : flex;
       justify-content: space-between;
     }
+    //Partie 1 du footer divisé en section
     section {
       display : flex;
       flex-direction: column;
-      border : 3px solid rgb(0, 0, 0);
-      
+      border : 3px solid rgb(0, 0, 0);  
     }
-    .footer__article{}
-    .footer__lien{}
-    .footer__adresse{}
-  
   } 
-
+  //Menu et credit du footer
   &__ligne{
     display : flex;
     flex-direction: column;
     align-items: center;
   }
-
 }
-
-
 .site__footer {
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
-
     &__menu{ // .site__footer__menu
-
       &__ul{ // .site__footer__menu__ul
           display : flex;
           list-style-type: none;
@@ -45,8 +36,7 @@
             a{ // .site__footer__menu__ul .menu-item a
               display : flex;
               align-items: center;
-              padding : 3px;
-              
+              padding : 3px;             
             }
           }    
        }

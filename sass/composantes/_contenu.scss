@@ -23,6 +23,7 @@
             margin: 10px 0px;
             font-family: $font__titre;
         }
+        //Lite des cours du TIM et SVG
         &__liste {
             display: flex;
             flex-wrap: wrap;
@@ -33,7 +34,7 @@
             .utilitaire{background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');}
             .video{background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');}
         }
-
+        //Boite pour les cours du TIM
         &__cours {
             
             background-position: 97% 10%;
@@ -52,23 +53,14 @@
             }
             padding: 10px;
         }
-
-
 }
-
-
-
-
-
-
+//Inclure le Mixin
 .cours__titre {
     @include important-text;
 }
-
 .cours__sigle {
     @include important-text;
 }
-
 .cours__description {
     font-size: 1rem;
 }

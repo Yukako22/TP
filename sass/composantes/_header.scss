@@ -13,6 +13,7 @@
       display: flex;
       justify-content: space-between;
     }
+    //Titre du header
 .header__titre {
     a {
       font-size: clamp(1rem, 2vw,2rem);
@@ -22,6 +23,7 @@
       
     }
   }
+  // Description du header (pas présent)
 .header__description {
       font-size: clamp(1rem, 2vw,2rem);
       font-family: $font__main;

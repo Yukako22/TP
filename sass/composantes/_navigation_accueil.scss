@@ -1,6 +1,7 @@
+//Controle du menu sur la page d'accueil
 .menu-menu_accueil-container,
 .menu-evenement-container{
-    
+    //Modification global du menu avec legere animation
     .menu {
         display: flex;
         justify-content: space-around;
@@ -18,19 +19,17 @@
                     transform: scale(102%);
                 }
             }  
-    }       
+    }
+    //       
     .menu-item{
             margin:0 10px;
             margin-bottom: 30px;
             background-color: $color__bouton__background;
             width: 30%;
-            
             flex: 0 0 20%;
             &:hover{
                 background-color: $color__bouton__background--hover;
             }
-            
-        
             
             a {
                 color: $color__bouton__color;
