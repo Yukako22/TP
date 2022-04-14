@@ -1,6 +1,6 @@
 //Page de SCSS pour les différents textes du site pour les uniformisés
 h1{
-    font-size: 4rem;
+    font-size: clamp(2rem,5vw,8rem);
 }
 h2{
     font-size: 3rem;

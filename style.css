@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Lab5 Boudreau_alex
+theme name: Exercice #3 Boudreau_alex
 Author: Alex Boudreau
 Author URI: https://github.com/Yukako22/TP.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/Yukako22/TP.git
@@ -409,7 +409,7 @@ a:hover, a:active {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 8rem);
 }
 
 h2 {
@@ -672,8 +672,7 @@ COMPOSANTES
 .site__footer__colonne section {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  flex: 0 0 30%;
+  border: 3px solid black;
 }
 
 .site__footer__ligne {
@@ -868,6 +867,10 @@ COMPOSANTES
   color: black;
 }
 
+.evenement {
+  color: white;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -932,7 +935,7 @@ LAYOUT
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: black;
+  background-color: #999494;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   z-index: -1;
 }
