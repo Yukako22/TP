@@ -23,7 +23,14 @@
                <?php
                     the_field('endroit');
                ?>
+               <p><?php the_field('date'); ?></p>
           </p>
+          <p><?php the_field('heure'); ?></p>
+          <p><?php the_field('oraganisation'); ?></p>
+          <?php $image = get_field('image');
+               if( !empty( $image ) ): ?>
+               <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+               <?php endif; ?>
      </article>
    <?php endif ?>
 </main>
