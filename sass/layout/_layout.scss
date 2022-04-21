@@ -1,6 +1,7 @@
 .site {
     background-color: $color__background-body;
     font-family: $font__main; 
+    position: relative;
 }
 .home::after{
     content:"";

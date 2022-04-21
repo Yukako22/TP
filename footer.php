@@ -37,6 +37,11 @@
                     "link_before"=>$icone)); ?>
     </div>
 </footer>
+
+<div class="boite__modale">
+    <button class="boite__modale__fermeture">-</button>
+    <p class="boite__modale__texte">test</p>
+</div>
 <?php wp_footer(); ?>
 </body>
 
