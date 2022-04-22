@@ -16,6 +16,7 @@
 }
 //---------------------Scss pour les cartes des cours
 .formation {
+    animation : anim-cours2 2s ease-out;
     display: flex;
     flex-direction: column;
         &__titre {
@@ -26,22 +27,24 @@
         }
         //Lite des cours du TIM et SVG
         &__liste {
+            
             display: flex;
             flex-wrap: wrap;
             .web{background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');}
             .jeu{background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');}
             .design{background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');}
             .creation-3d{background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');}
-            .utilitaire{background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');}
+            .utilitaire{background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold'); }
             .video{background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');}
+            
         }
         //Boite pour les cours du TIM
         &__cours {
             
             background-position: 97% 10%;
             background-repeat: no-repeat;
-            animation : anim-principal 4s forwards;
-            
+            box-shadow: rgb(150, 13, 155) 2px 4px 15px;
+            animation : anim-cours 2s ease-out;
             border-radius: 5px;
             margin: 10px;
             display: flex;
@@ -73,5 +76,21 @@
     
     100% {
         box-shadow: rgb(150, 13, 155) 2px 4px 15px;  
+    }
+}
+@keyframes anim-cours {
+    0% {
+      transform : translateX(300vh);  
+    }
+    100% {
+        transform : translateX(0);  
+    }
+}
+@keyframes anim-cours2 {
+    0% {
+      transform : translateY(300vw);  
+    }
+    100% {
+        transform : translateY(0);  
     }
 }
