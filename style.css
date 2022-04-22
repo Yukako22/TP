@@ -776,6 +776,20 @@ COMPOSANTES
   cursor: pointer;
 }
 
+.archive::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #766f6f;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  z-index: -1;
+}
+
 .recherche {
   display: flex;
   position: relative;
@@ -903,15 +917,22 @@ COMPOSANTES
 
 .boite__modale {
   position: fixed;
-  top: 25vh;
-  left: 25vw;
   border: 5px solid black;
   background-color: #413e3e;
-  width: 50vw;
-  height: 50vh;
+  width: 100vw;
+  height: 100vh;
   transform: scale(0);
   transition: all 1s ease-in-out;
   animation: anim-boite 3s infinite;
+}
+
+@media screen and (min-width: 700px) {
+  .boite__modale {
+    top: 25vh;
+    left: 25vw;
+    width: 50vw;
+    height: 50vh;
+  }
 }
 
 .ouvrir {
@@ -1006,7 +1027,7 @@ LAYOUT
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #999494;
+  background-color: #766f6f;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   z-index: -1;
 }
