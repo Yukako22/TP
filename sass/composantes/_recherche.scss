@@ -2,7 +2,7 @@
 .recherche{
     display: flex;
     position: relative;
-    box-shadow: rgb(150, 13, 155) 1px 3px 10px;
+    animation : anim-principal 4s forwards;
 
 &__input{
     background-color: $color__recherche;

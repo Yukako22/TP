@@ -36,7 +36,7 @@
         text-decoration: none;
         padding : 4px;
         border: 1px solid rgb(107, 4, 102);
-        box-shadow: rgb(150, 13, 155) 1px 3px 10px;
+        animation : anim-principal 4s forwards;
         
             &:hover {
                 background-color: $color__background-link-hover;

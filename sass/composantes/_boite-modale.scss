@@ -2,12 +2,13 @@
     position: fixed;
     top: 25vh;
     left: 25vw;
-    border : 5px solid yellow;
-    background-color: black;
+    border : 5px solid black;
+    background-color: $color__background-cours;
     width: 50vw;
     height: 50vh;
     transform: scale(0);
     transition: all 1s ease-in-out;
+    animation : anim-boite 3s infinite;
     &__fermeture{}
     &__texte{}
     
@@ -25,4 +26,15 @@
 .cours__desc__ouvrir:hover{
     cursor: pointer;
     background-color: $color__Bouton__boite__modale--hover; 
+}
+@keyframes anim-boite {
+    0% {
+        box-shadow: rgb(150, 13, 155) 0px 0px 0px; 
+    }
+    50%{
+        box-shadow: rgb(150, 13, 155) 1px 3px 10px; 
+    }
+    100% {
+        box-shadow: rgb(150, 13, 155) 0px 0px 0px;  
+    }
 }

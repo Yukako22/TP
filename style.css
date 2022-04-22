@@ -453,7 +453,7 @@ COMPOSANTES
   padding: 10px 15px;
   background-color: #373434;
   border-radius: 5px;
-  box-shadow: #960d9b 1px 3px 10px;
+  animation: anim-principal 4s forwards;
 }
 
 .formation {
@@ -500,7 +500,7 @@ COMPOSANTES
 .formation__cours {
   background-position: 97% 10%;
   background-repeat: no-repeat;
-  box-shadow: #960d9b 1px 3px 10px;
+  animation: anim-principal 4s forwards;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -535,6 +535,15 @@ COMPOSANTES
 
 .cours__description {
   font-size: 1rem;
+}
+
+@keyframes anim-principal {
+  0% {
+    box-shadow: #960d9b 0px 0px 0px;
+  }
+  100% {
+    box-shadow: #960d9b 2px 4px 15px;
+  }
 }
 
 .site__header {
@@ -631,7 +640,7 @@ COMPOSANTES
   text-decoration: none;
   padding: 4px;
   border: 1px solid #6b0466;
-  box-shadow: #960d9b 1px 3px 10px;
+  animation: anim-principal 4s forwards;
 }
 
 .menu-item a:hover {
@@ -750,7 +759,7 @@ COMPOSANTES
 .recherche {
   display: flex;
   position: relative;
-  box-shadow: #960d9b 1px 3px 10px;
+  animation: anim-principal 4s forwards;
 }
 
 .recherche__input {
@@ -876,12 +885,13 @@ COMPOSANTES
   position: fixed;
   top: 25vh;
   left: 25vw;
-  border: 5px solid yellow;
-  background-color: black;
+  border: 5px solid black;
+  background-color: #413e3e;
   width: 50vw;
   height: 50vh;
   transform: scale(0);
   transition: all 1s ease-in-out;
+  animation: anim-boite 3s infinite;
 }
 
 .ouvrir {
@@ -897,6 +907,18 @@ COMPOSANTES
 .cours__desc__ouvrir:hover {
   cursor: pointer;
   background-color: #721d56;
+}
+
+@keyframes anim-boite {
+  0% {
+    box-shadow: #960d9b 0px 0px 0px;
+  }
+  50% {
+    box-shadow: #960d9b 1px 3px 10px;
+  }
+  100% {
+    box-shadow: #960d9b 0px 0px 0px;
+  }
 }
 
 /* ---------------------------------------------------------
