@@ -20,6 +20,7 @@ VARIABLES
 /* ---------------- FONT */
 /*------------------------Recherche*/
 /*---------Bouton lien-------------*/
+/*--------------------Bouton__boite__modale---------------*/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -885,6 +886,17 @@ COMPOSANTES
 
 .ouvrir {
   transform: scale(1);
+}
+
+.cours__desc__ouvrir {
+  background-color: #4c1480;
+  border: 1px solid black;
+  outline: none;
+}
+
+.cours__desc__ouvrir:hover {
+  cursor: pointer;
+  background-color: #721d56;
 }
 
 /* ---------------------------------------------------------

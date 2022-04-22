@@ -14,6 +14,15 @@
 }
 .ouvrir{
 
-    transform: scale(1);
+    transform: scale(1); 
 
+}
+.cours__desc__ouvrir{
+    background-color: $color__Bouton__boite__modale;
+    border: 1px solid black;
+    outline: none;
+}
+.cours__desc__ouvrir:hover{
+    cursor: pointer;
+    background-color: $color__Bouton__boite__modale--hover; 
 }
