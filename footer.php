@@ -40,7 +40,7 @@
 
 <div class="boite__modale">
     <button class="boite__modale__fermeture">-</button>
-    <p class="boite__modale__texte">test</p>
+    <p class="boite__modale__texte"></p>
 </div>
 <?php wp_footer(); ?>
 </body>

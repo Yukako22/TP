@@ -1,6 +1,5 @@
 .boite__modale{
     position: fixed;
-    
     border : 5px solid black;
     background-color: $color__background-cours;
     width: 100vw;
@@ -19,9 +18,7 @@
     
 }
 .ouvrir{
-
     transform: scale(1); 
-
 }
 .cours__desc__ouvrir{
     background-color: $color__Bouton__boite__modale;
