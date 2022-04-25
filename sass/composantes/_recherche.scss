@@ -2,6 +2,7 @@
 .recherche{
     display: flex;
     position: relative;
+    
     animation : anim-principal 4s forwards;
 
 &__input{
@@ -10,6 +11,7 @@
     transition: background-color .25;
     border: none;
     outline: none;
+    color: white;
     &:focus{
         background-color: rgba(#000,.2);
     }
