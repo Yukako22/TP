@@ -11,10 +11,11 @@
                <figure class="article__figure">
                     <?php the_post_thumbnail("medium");  ?>
                </figure>
+                <?php endif ?>  
                <?php the_content() ?>  
           </div>
           </article>
-     <?php endif ?>     
+       
    <?php endif ?>
 </main>
 <?php get_footer() ?>
