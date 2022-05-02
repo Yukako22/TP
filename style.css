@@ -619,17 +619,11 @@ COMPOSANTES
 
 #burger {
   position: absolute;
-  transition: transform .5s;
-  transform: rotate(0);
   cursor: pointer;
 }
 
 #chk-burger {
   display: none;
-}
-
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
 }
 
 .menu-principal-container {
@@ -638,14 +632,13 @@ COMPOSANTES
 
 #chk-burger:checked ~ .menu-principal-container {
   display: block;
-  animation: anim-burger .4s ease-in;
 }
 
 .menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-left: 50px;
+  padding-left: 70px;
 }
 
 @media screen and (min-width: 700px) {
@@ -862,6 +855,11 @@ COMPOSANTES
   color: white;
 }
 
+.menu-menu_accueil-container,
+.menu-evenement-container {
+  width: 90%;
+}
+
 .menu-menu_accueil-container .menu,
 .menu-evenement-container .menu {
   display: flex;
@@ -971,10 +969,27 @@ COMPOSANTES
   }
 }
 
+.galerie {
+  width: 55%;
+}
+
+@media screen and (min-width: 700px) {
+  .galerie {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.home .site__main {
+  align-items: center;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 .animation {
+  width: 90%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -1018,6 +1033,51 @@ ANIMATION
   }
 }
 
+.burger {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.burger .burger__ligne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #efc700;
+  transition: all 0.5s ease-in-out;
+  border-radius: 15px;
+}
+
+.burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+}
+
+.burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
+}
+
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(30% 30%, 50% 40%, 60% 60%, 40% 50%);
+}
+
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -1053,6 +1113,8 @@ LAYOUT
 .site__main {
   grid-area: main;
   background-color: rgba(55, 52, 52, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 .site__footer {

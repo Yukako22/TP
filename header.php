@@ -9,15 +9,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php wp_head() ?>
     <style>
         .home::after{
             background-color: <?= get_theme_mod("background_clipPath");  ?>;
         }
+        .site {
+            background-color: <?= get_theme_mod("background_body");  ?>;
+        }
     </style>
-    <?php wp_head() ?>
+    
     <?php show_admin_bar(true); ?>
 </head>
-<body  <?php body_class("site"); ?> style = "background-color:<?= get_theme_mod("background_body");  ?>;">
+<body  <?php body_class("site"); ?>>
 <header class="site__header">
     <section class="site__header__titre">
         <h1 class="header__titre">
@@ -53,8 +57,10 @@
 </header>
 <section class="site__barre">
     <input type="checkbox"  id="chk-burger">
-    <label for="chk-burger" id="burger">
-    <svg width="32px" height="32px" viewBox="0 0 105 105" xmlns="http://www.w3.org/2000/svg" fill="currentColor" color="white"><circle cx="12.5" cy="12.5" r="12.5"><animate attributeName="fill-opacity" begin="0s" dur="1s" values="1;.2;1" calcMode="linear" repeatCount="indefinite"></animate></circle><circle cx="12.5" cy="52.5" r="12.5" fill-opacity=".5"><animate attributeName="fill-opacity" begin="100ms" dur="1s" values="1;.2;1" calcMode="linear" repeatCount="indefinite"></animate></circle><circle cx="52.5" cy="12.5" r="12.5"><animate attributeName="fill-opacity" begin="300ms" dur="1s" values="1;.2;1" calcMode="linear" repeatCount="indefinite"></animate></circle><circle cx="52.5" cy="52.5" r="12.5"><animate attributeName="fill-opacity" begin="600ms" dur="1s" values="1;.2;1" calcMode="linear" repeatCount="indefinite"></animate></circle><circle cx="92.5" cy="12.5" r="12.5"><animate attributeName="fill-opacity" begin="800ms" dur="1s" values="1;.2;1" calcMode="linear" repeatCount="indefinite"></animate></circle><circle cx="92.5" cy="52.5" r="12.5"><animate attributeName="fill-opacity" begin="400ms" dur="1s" values="1;.2;1" calcMode="linear" repeatCount="indefinite"></animate></circle><circle cx="12.5" cy="92.5" r="12.5"><animate attributeName="fill-opacity" begin="700ms" dur="1s" values="1;.2;1" calcMode="linear" repeatCount="indefinite"></animate></circle><circle cx="52.5" cy="92.5" r="12.5"><animate attributeName="fill-opacity" begin="500ms" dur="1s" values="1;.2;1" calcMode="linear" repeatCount="indefinite"></animate></circle><circle cx="92.5" cy="92.5" r="12.5"><animate attributeName="fill-opacity" begin="200ms" dur="1s" values="1;.2;1" calcMode="linear" repeatCount="indefinite"></animate></circle></svg>
+    <label for="chk-burger" id="burger" class="burger">
+    <div class="burger__ligne"></div>
+    <div class="burger__ligne"></div>
+    <div class="burger__ligne"></div>
     </label>
     <?php wp_nav_menu(array("menu"=>"principal",
                             "container"=>"nav")); ?>

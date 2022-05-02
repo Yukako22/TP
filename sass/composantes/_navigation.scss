@@ -1,29 +1,27 @@
 //-----------------------Menu burger----------------------------
 #burger {
     position : absolute;
-    transition : transform .5s;
-    transform : rotate(0);
+    //transition : transform .5s;
+    //transform : rotate(0);
     cursor: pointer;
 }
 #chk-burger {
     display: none;
 }
-#chk-burger:checked ~ #burger {
-    transform : rotate(90deg);
-}
+
 .menu-principal-container {
     display : none;
 }
 #chk-burger:checked ~ .menu-principal-container{
     display : block;
-    animation : anim-burger .4s ease-in;
+   // animation : anim-burger .4s ease-in;
 }
 //--------------------------------Menu--------------------------
 .menu {
     list-style-type: none;
     margin : 0;
     padding :0;
-    padding-left: 50px;
+    padding-left: 70px;
         @media screen and (min-width:700px) {
             padding-left: 0px;
         }  

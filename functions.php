@@ -2,7 +2,11 @@
 require_once("options/apparence.php");
 function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
-    wp_enqueue_style('cidw-4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
+    wp_enqueue_style('cidw-4w4-le-style', 
+                    get_template_directory_uri() . '/style.css', 
+                    array(), 
+                    filemtime(get_template_directory() . '/style.css'), 
+                    false);
 
     wp_enqueue_style('cidw-4w4-google-font',"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap",false);
 
@@ -17,8 +21,6 @@ function cidw_4w4_register_nav_menu(){
         'footer_colonne'  => __( 'Menu footer colonne', 'cidw_4w4' ),
         'menu_cours' =>__('Menu cours','cidw_4w4'),
         'menu_accueil' =>__('Menu accueil','cidw_4w4')
-
-
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
