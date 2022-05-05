@@ -39,12 +39,12 @@
 </footer>
 
 <div class="boite__modale">
-    <button class="boite__modale_fermeture">-</button>
-    <article class="boite__modale_texte"></article>
+    <button class="boite__modale__fermeture">-</button>
+    <article class="boite__modale__texte"></article>
 </div>
 <div class="boite__carrousel">
-    <button class="boite__carrousel_fermeture">-</button>
-    <article class="boite__carrousel_navigation"></article>
+    <button class="boite__carrousel__fermeture">-</button>
+    <article class="boite__carrousel__navigation"></article>
 </div>
 <?php wp_footer(); ?>
 </body>

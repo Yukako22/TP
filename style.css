@@ -933,7 +933,7 @@ COMPOSANTES
   animation: anim-boite 3s infinite;
 }
 
-.boite__modale_fermeture, .boite__carrousel_fermeture {
+.boite__modale__fermeture, .boite__carrousel__fermeture {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -944,9 +944,15 @@ COMPOSANTES
   border: none;
 }
 
-.boite__modale_fermeture:hover, .boite__carrousel_fermeture:hover {
+.boite__modale__fermeture:hover, .boite__carrousel__fermeture:hover {
   background-color: darkgray;
   cursor: pointer;
+}
+
+.boite__modale__texte, .boite__carrousel__texte {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 
 @media screen and (min-width: 700px) {
@@ -966,7 +972,7 @@ COMPOSANTES
   height: 100%;
 }
 
-.boite__carrousel_navigation {
+.boite__carrousel__navigation {
   position: absolute;
   width: 100%;
   height: 10%;
@@ -976,7 +982,7 @@ COMPOSANTES
   justify-content: center;
 }
 
-.boite__carrousel_navigation button {
+.boite__carrousel__navigation button {
   width: 20px;
   height: 20px;
   margin: 5px 10px;
@@ -984,7 +990,7 @@ COMPOSANTES
   border: none;
 }
 
-.boite__carrousel_navigation button:hover {
+.boite__carrousel__navigation button:hover {
   cursor: pointer;
   background-color: black;
 }

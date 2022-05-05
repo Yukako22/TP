@@ -7,7 +7,7 @@
     transform: scale(0);
     transition: all 1s ease-in-out;
     animation : anim-boite 3s infinite;
-    &_fermeture{
+    &__fermeture{
         position: absolute;
         width: 30px;
         height: 30px;
@@ -21,7 +21,11 @@
             cursor: pointer;
         }
     }
-    &_texte{}
+    &__texte{
+        width: 80%;
+        margin-left:10%;
+        margin-top: 10%;
+    }
     @media screen and (min-width:700px) {
         top: 25vh;
         left: 25vw;
@@ -43,7 +47,7 @@
           width: 100%;
           height: 100%;
       }
-      &_navigation{
+      &__navigation{
           position: absolute;
           width:100%;
           height: 10%;

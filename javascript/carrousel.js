@@ -2,11 +2,11 @@
     
     let boite__carrousel = document.querySelector(".boite__carrousel");
 
-    let boite__carrousel_navigation = document.querySelector(".boite__carrousel_navigation");
+    let boite__carrousel__navigation = document.querySelector(".boite__carrousel__navigation");
 
     let galerie__img = document.querySelectorAll('.galerie img');
 
-    let boite__carrousel__fermeture = document.querySelector('.boite__carrousel_fermeture');
+    let boite__carrousel__fermeture = document.querySelector('.boite__carrousel__fermeture');
 
     let elmimg = document.createElement('img');
 
@@ -17,7 +17,7 @@
     for(const img of galerie__img){
 
         let bouton = document.createElement('button');
-        boite__carrousel_navigation.append(bouton);
+        boite__carrousel__navigation.append(bouton);
         bouton.dataset.index = index++
         bouton.addEventListener('mousedown', function(){
             elmimg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'))
