@@ -1,0 +1,91 @@
+.boite__modale, .boite__carrousel{
+    position: fixed;
+    border : 3px solid black;
+    background-color: $color__background-cours;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+    animation : anim-boite 3s infinite;
+    &_fermeture{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top:5px;
+        right: 5px;
+        z-index: 1;
+        border-radius: 50%;
+        border: none;
+        &:hover{
+            background-color: darkgray;
+            cursor: pointer;
+        }
+    }
+    &_texte{}
+    @media screen and (min-width:700px) {
+        top: 25vh;
+        left: 25vw;
+        width: 50vw;
+        height: 50vh;
+      }
+    
+}
+.boite__carrousel{
+
+    @media screen and (min-width:700px) {
+        
+        
+      }
+      img {
+          position: absolute;
+          top: 0;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+      }
+      &_navigation{
+          position: absolute;
+          width:100%;
+          height: 10%;
+          bottom: 0;
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          button{
+              width: 20px;
+              height: 20px;
+              margin: 5px 10px;
+              border-radius: 50%;
+              border: none;
+              &:hover{
+                cursor: pointer;
+                background-color: black;
+              }
+              
+          }
+      }
+}
+
+.ouvrir{
+    transform: scale(1); 
+}
+.cours__desc__ouvrir{
+    background-color: $color__Bouton__boite__modale;
+    border: 2px solid black;
+    outline: none;
+}
+.cours__desc__ouvrir:hover{
+    cursor: pointer;
+    background-color: $color__Bouton__boite__modale--hover; 
+}
+@keyframes anim-boite {
+    0% {
+        box-shadow: rgb(150, 13, 155) 0px 0px 0px; 
+    }
+    50%{
+        box-shadow: rgb(150, 13, 155) 1px 3px 10px; 
+    }
+    100% {
+        box-shadow: rgb(150, 13, 155) 0px 0px 0px;  
+    }
+}
