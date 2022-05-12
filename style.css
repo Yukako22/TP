@@ -751,6 +751,7 @@ COMPOSANTES
 }
 
 .formation__cours {
+  color: white;
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -881,6 +882,7 @@ COMPOSANTES
   .menu-menu_accueil-container .menu:hover,
   .menu-evenement-container .menu:hover {
     transform: scale(102%);
+    z-index: 1;
   }
 }
 
@@ -953,10 +955,21 @@ COMPOSANTES
   width: 80%;
   margin-left: 10%;
   margin-top: 10%;
+  line-height: 3rem;
+  color: white;
 }
 
 @media screen and (min-width: 700px) {
-  .boite__modale, .boite__carrousel {
+  .boite__modale {
+    top: 12.5vh;
+    left: 12.5vw;
+    width: 75vw;
+    height: 75vh;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .boite__carrousel {
     top: 25vh;
     left: 25vw;
     width: 50vw;
@@ -964,12 +977,26 @@ COMPOSANTES
   }
 }
 
-.boite__carrousel img {
+.boite__carrousel__img {
   position: absolute;
   top: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.boite__carrousel__img img {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.boite__carrousel__img img.img--ouvrir {
+  opacity: 1;
 }
 
 .boite__carrousel__navigation {
@@ -982,15 +1009,15 @@ COMPOSANTES
   justify-content: center;
 }
 
-.boite__carrousel__navigation button {
-  width: 20px;
-  height: 20px;
+.boite__carrousel__navigation .bouton {
+  width: 5rem;
+  height: 5rem;
   margin: 5px 10px;
   border-radius: 50%;
   border: none;
 }
 
-.boite__carrousel__navigation button:hover {
+.boite__carrousel__navigation .bouton:hover {
   cursor: pointer;
   background-color: black;
 }

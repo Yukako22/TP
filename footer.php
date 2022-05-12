@@ -45,6 +45,7 @@
 <div class="boite__carrousel">
     <button class="boite__carrousel__fermeture">-</button>
     <article class="boite__carrousel__navigation"></article>
+    <section class="boite__carrousel__img"></section>
 </div>
 <?php wp_footer(); ?>
 </body>
