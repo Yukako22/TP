@@ -17,6 +17,9 @@
         .site {
             background-color: <?= get_theme_mod("background_body");  ?>;
         }
+        .archive::after{
+            background-color: <?= get_theme_mod("background_clipPathCours");  ?>;
+        }
     </style>
     
     <?php show_admin_bar(true); ?>
