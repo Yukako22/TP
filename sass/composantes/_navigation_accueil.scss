@@ -32,12 +32,10 @@
             flex: 0 0 10%;
             height: 10%;
             display: flex;
-            
             border: 3px solid rgb(107, 4, 102);
             &:hover{
                 background-color: $color__bouton__background--hover;
             }
-            
             a {
                 color: $color__bouton__color;
                 display : block;
@@ -48,10 +46,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
                     &:hover {
-                        background-color: $color__bouton__background--hover;
-                        
+                        background-color: $color__bouton__background--hover;      
                     }
                     a{
                         color: $color__bouton__color--hover;
@@ -59,4 +55,3 @@
         }
     }
 }
-

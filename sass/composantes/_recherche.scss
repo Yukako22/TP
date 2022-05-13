@@ -27,7 +27,8 @@
         color: #000;
         }
     }
-    .recherche__bouton:hover{
+    //Hover du bouton de recherche
+    &:hover{
         cursor: pointer;
         opacity: 0.5;
     }

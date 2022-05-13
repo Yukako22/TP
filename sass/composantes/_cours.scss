@@ -6,6 +6,7 @@
         
     }
 }
+//Scss pour les cartes de cours en version mobile
 .formation__cours{
     color: white;
     display: flex;
@@ -14,16 +15,17 @@
     margin: 20px;
     opacity: 0.7;
     width:60%;
-    
+    border: 2px solid rgb(0, 0, 0);
+    background-color: $color__background-cours;
+    //Scss pour les cartes de cours en version Tablette
     @media  screen and (min-width : $largeur__media--tablette) {
         width : 40%;
         padding: 0 20px;
     }
+    //Scss pour les cartes de cours en version desktop
     @media  screen and (min-width : $largeur__media--desktop) {
         width : 25%;
     }
-    border: 2px solid rgb(0, 0, 0);
-    background-color: $color__background-cours;
 }
 //-----------------------Ajout de bordure si on met la souris sur la case-----------------------
 .formation__cours:hover{
@@ -31,6 +33,7 @@
     cursor: pointer;
     opacity: 1;
 }
+//clipPath pour la section Cours
 .archive::after{
     content:"";
     position: absolute;

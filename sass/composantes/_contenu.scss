@@ -6,12 +6,10 @@
     color: $color__font-main;
     margin: 5px 0px;
   }
-  
 .site__main {
     padding: 10px 15px;
     background-color: $color__background-main;
     border-radius: 5px;
-     
     animation : anim-principal 4s forwards;
 }
 //---------------------Scss pour les cartes des cours
@@ -27,7 +25,6 @@
         }
         //Lite des cours du TIM et SVG
         &__liste {
-            
             display: flex;
             flex-wrap: wrap;
             .web{background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');}
@@ -35,8 +32,7 @@
             .design{background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');}
             .creation-3d{background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');}
             .utilitaire{background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold'); }
-            .video{background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');}
-            
+            .video{background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');} 
         }
         //Boite pour les cours du TIM
         &__cours {
@@ -52,8 +48,6 @@
             &__invisible{
                 display: none;
             }
-
-
             @media screen and (min-width : $largeur__media--tablette){
                 width: 45%;
             }
@@ -62,7 +56,6 @@
             }
             padding: 10px;
         }
-
 }
 //Inclure le Mixin
 .cours__titre {
@@ -78,11 +71,11 @@
     0% {
         box-shadow: rgb(150, 13, 155) 0px 0px 0px; 
     }
-    
     100% {
         box-shadow: rgb(150, 13, 155) 2px 4px 15px;  
     }
 }
+//animation  des carte de cours
 @keyframes anim-cours {
     0% {
       transform : translateX(300vh);  
@@ -91,6 +84,7 @@
         transform : translateX(0);  
     }
 }
+//animation de la page de cours
 @keyframes anim-cours2 {
     0% {
       transform : translateY(300vw);  

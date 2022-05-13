@@ -1,4 +1,5 @@
 <?php get_header() ?>
+<!-- Page 404 du site -->
 <main class="site__main">
     <section class="erreur-404">
     <h1>

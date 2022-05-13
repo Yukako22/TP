@@ -56,7 +56,6 @@
         </div>
         <?php get_search_form(); ?>
     </section>
-    
 </header>
 <section class="site__barre">
     <input type="checkbox"  id="chk-burger">
@@ -68,6 +67,3 @@
     <?php wp_nav_menu(array("menu"=>"principal",
                             "container"=>"nav")); ?>
 </section>
-
-
-    

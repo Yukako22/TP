@@ -8,16 +8,15 @@
 #chk-burger {
     display: none;
 }
-
 .menu-principal-container {
     display : none;
 }
+//Activation du menu avec le menu burger si il est checked
 #chk-burger:checked ~ .menu-principal-container{
     display : block;
     animation : anim-burger .4s ease-in;
 }
-
-//--------------------------------Menu--------------------------
+//--------------------------------MenuPrincipal--------------------------
 .menu {
     list-style-type: none;
     margin : 0;
@@ -27,6 +26,7 @@
             padding-left: 0px;
         }  
 }
+//Parametre des item dans le menu
 .menu-item {
     margin:0;
     padding : 0;
@@ -36,17 +36,14 @@
         padding : 4px;
         border: 1px solid rgb(107, 4, 102);
         animation : anim-principal 4s forwards;
-        
             &:hover {
                 background-color: $color__background-link-hover;
                 box-shadow: white 1px 3px 10px;
-                transform: scale(105%);
-                
-                
+                transform: scale(105%);      
             }
     }
 }
-
+//Affichage du menu sans le burger
 @media screen and (min-width : $largeur__media--tablette){
     #burger {
         display : none;
@@ -54,7 +51,6 @@
     .menu-principal-container {
         display : block;
     }
-
 }
 //------------------Animation du menu burger----------------
 @keyframes anim-burger {

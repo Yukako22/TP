@@ -847,7 +847,7 @@ COMPOSANTES
   color: #000;
 }
 
-.recherche .recherche__bouton:hover {
+.recherche:hover {
   cursor: pointer;
   opacity: 0.5;
 }
