@@ -10,11 +10,14 @@
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 20px;
-    padding: 0 20px;
-    width:80%;
+    opacity: 0.7;
+    width:60%;
+    
     @media  screen and (min-width : $largeur__media--tablette) {
         width : 40%;
+        padding: 0 20px;
     }
     @media  screen and (min-width : $largeur__media--desktop) {
         width : 25%;
@@ -26,6 +29,7 @@
 .formation__cours:hover{
     box-shadow: 5px 15px 15px rgba(233, 233, 233, 0.6);
     cursor: pointer;
+    opacity: 1;
 }
 .archive::after{
     content:"";
