@@ -4,13 +4,14 @@
     width: 90%;
     //Modification global du menu avec legere animation
     .menu {
+        opacity: 0.6;
         display: flex;
         justify-content: space-around;
         list-style-type: none;
         flex-direction: column;
         margin : 0;
         padding :0;
-        padding-left: 50px;
+        //padding-left: 50px;
         align-items: center;
             @media screen and (min-width:700px) {
                 padding-left: 0px;
@@ -27,8 +28,12 @@
             margin:0 10px;
             margin-bottom: 30px;
             background-color: $color__bouton__background;
-            width: 30%;
-            flex: 0 0 20%;
+            width: 100%;
+            flex: 0 0 10%;
+            height: 10%;
+            display: flex;
+            
+            border: 3px solid rgb(107, 4, 102);
             &:hover{
                 background-color: $color__bouton__background--hover;
             }
@@ -38,8 +43,11 @@
                 display : block;
                 text-decoration: none;
                 padding : 1px;
-                border: 3px solid rgb(107, 4, 102);
+                width: 100%;
                 height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 
                     &:hover {
                         background-color: $color__bouton__background--hover;

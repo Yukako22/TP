@@ -25,7 +25,7 @@
         let bouton = document.createElement('input');
         bouton.checked=false
         bouton.type="radio"
-        bouton.class="bouton"
+        bouton.className="bouton"
         bouton.name="bouton"
         
         boite__carrousel__navigation.append(bouton);

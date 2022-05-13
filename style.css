@@ -687,6 +687,7 @@ COMPOSANTES
 .site__footer {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 @media screen and (min-width: 700px) {
@@ -706,6 +707,16 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.site__footer .footer__adresse {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .site__footer .footer__adresse {
+    display: flex;
+  }
 }
 
 .site__footer {
@@ -863,13 +874,13 @@ COMPOSANTES
 
 .menu-menu_accueil-container .menu,
 .menu-evenement-container .menu {
+  opacity: 0.6;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  padding-left: 50px;
   align-items: center;
 }
 
@@ -891,8 +902,11 @@ COMPOSANTES
   margin: 0 10px;
   margin-bottom: 30px;
   background-color: #a1a1a1;
-  width: 30%;
-  flex: 0 0 20%;
+  width: 100%;
+  flex: 0 0 10%;
+  height: 10%;
+  display: flex;
+  border: 3px solid #6b0466;
 }
 
 .menu-menu_accueil-container .menu-item:hover,
@@ -906,8 +920,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 1px;
-  border: 3px solid #6b0466;
+  width: 100%;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-menu_accueil-container .menu-item a:hover,
@@ -924,6 +941,8 @@ COMPOSANTES
   color: white;
 }
 
+/*Scss Pour la boite modale des cours et de la boite carrousel*/
+/*Ensemble des caractérisque similaire pour les 2 boites modales*/
 .boite__modale, .boite__carrousel {
   position: fixed;
   border: 3px solid black;
@@ -1010,9 +1029,10 @@ COMPOSANTES
 }
 
 .boite__carrousel__navigation .bouton {
-  width: 5rem;
-  height: 5rem;
+  width: 2rem;
+  height: 2rem;
   margin: 5px 10px;
+  bottom: 15%;
   border-radius: 50%;
   border: none;
 }
@@ -1071,7 +1091,7 @@ ANIMATION
 .animation {
   width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -1079,6 +1099,7 @@ ANIMATION
 @media screen and (min-width: 700px) {
   .animation {
     flex-direction: row;
+    width: 70%;
   }
 }
 

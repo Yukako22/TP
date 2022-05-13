@@ -1,3 +1,5 @@
+/*Scss Pour la boite modale des cours et de la boite carrousel*/
+/*Ensemble des caractérisque similaire pour les 2 boites modales*/
 .boite__modale, .boite__carrousel{
     position: fixed;
     border : 3px solid black;
@@ -20,14 +22,14 @@
             background-color: darkgray;
             cursor: pointer;
         }
-    }
+    }//Bouton de fermeture de la boite modale
     &__texte{
         width: 80%;
         margin-left:10%;
         margin-top: 10%;
         line-height: 3rem;
         color: white;
-    }
+    }//Texte de la boite modale des cours
     
     
 }
@@ -66,7 +68,7 @@
                 opacity: 1;
             }
         }
-      }
+      }//balise img pour les images du carrousel
       &__navigation{
           position: absolute;
           width:100%;
@@ -76,9 +78,10 @@
           display: flex;
           justify-content: center;
           .bouton{
-              width: 5rem;
-              height: 5rem;
-              margin: 5px 10px;
+              width: 2rem;
+              height: 2rem;
+              margin: 5px 10px ;
+              bottom:15%;
               border-radius: 50%;
               border: none;
               &:hover{
@@ -87,21 +90,21 @@
               }
               
           }
-      }
+      }//Navigation entre les différentes images du carrousel
 }
 
 .ouvrir{
     transform: scale(1); 
-}
+}//Ouverture de la boite modale
 .cours__desc__ouvrir{
     background-color: $color__Bouton__boite__modale;
     border: 2px solid black;
     outline: none;
-}
+}//Bouton pour l'ouverture de la boite modale des cours
 .cours__desc__ouvrir:hover{
     cursor: pointer;
     background-color: $color__Bouton__boite__modale--hover; 
-}
+}//Hover pour l'affichage du pointeur sur le bouton qui ouvre la boite modale
 @keyframes anim-boite {
     0% {
         box-shadow: rgb(150, 13, 155) 0px 0px 0px; 
@@ -112,4 +115,4 @@
     100% {
         box-shadow: rgb(150, 13, 155) 0px 0px 0px;  
     }
-}
+}//Animation du box-shadow de la boite modale des cours
