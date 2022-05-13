@@ -640,6 +640,7 @@ COMPOSANTES
 
 #chk-burger:checked ~ .menu-principal-container {
   display: block;
+  animation: anim-burger .4s ease-in;
 }
 
 .menu {
@@ -844,6 +845,11 @@ COMPOSANTES
 
 .recherche__button svg {
   color: #000;
+}
+
+.recherche .recherche__bouton:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 /*-----------------Navigation catégorie cours-----*/
@@ -1112,6 +1118,16 @@ COMPOSANTES
   align-items: center;
 }
 
+.imgCarrousel {
+  border-radius: 10%;
+  border: 2px solid black;
+}
+
+.imgCarrousel:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1163,12 +1179,12 @@ ANIMATION
 
 .burger {
   position: relative;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   margin-top: 5px;
   margin-left: 5px;
   background-color: black;
-  border-radius: 15px;
+  border-radius: 30%;
 }
 
 .burger .burger__ligne {
@@ -1177,7 +1193,7 @@ ANIMATION
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #efc700;
+  background-color: white;
   transition: all 0.5s ease-in-out;
   border-radius: 15px;
 }

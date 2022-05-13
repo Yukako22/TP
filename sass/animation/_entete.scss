@@ -1,4 +1,4 @@
-//------------------------------------------------Animation de l'entete pouyr les mots clé-----------------------------------------
+//------------------------------------------------Animation de l'entete pour les mots clé-----------------------------------------
 .animation{
     width: 90%;
     display : flex;
@@ -9,7 +9,6 @@
         flex-direction: row;
         width: 70%;
       }
-
     &__bloc{
         display : flex;
         justify-content: center;
@@ -37,3 +36,5 @@
         transform : translateX(0);  
     }
 }
+
+

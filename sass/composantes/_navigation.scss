@@ -14,8 +14,9 @@
 }
 #chk-burger:checked ~ .menu-principal-container{
     display : block;
-   // animation : anim-burger .4s ease-in;
+    animation : anim-burger .4s ease-in;
 }
+
 //--------------------------------Menu--------------------------
 .menu {
     list-style-type: none;

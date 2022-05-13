@@ -1,4 +1,14 @@
+//Alignement de la page principal (centre)
 .home .site__main{
     
     align-items: center;
+}
+//Image de la page d'accueil (carrousel)
+.imgCarrousel{
+    border-radius: 10%;
+    border: 2px solid black;
+}
+.imgCarrousel:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
