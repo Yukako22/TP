@@ -13,7 +13,12 @@
     section {
       display : flex;
       flex-direction: column;
-      border : 3px solid rgb(0, 0, 0);  
+      border : 3px solid rgb(0, 0, 0);
+      
+       .menu{
+        padding-left: 0;
+        
+       }
     }
   } 
   //Menu et credit du footer

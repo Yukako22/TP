@@ -712,6 +712,10 @@ COMPOSANTES
   border: 3px solid black;
 }
 
+.site__footer__colonne section .menu {
+  padding-left: 0;
+}
+
 .site__footer__ligne {
   display: flex;
   flex-direction: column;
