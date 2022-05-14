@@ -116,3 +116,37 @@
         box-shadow: rgb(150, 13, 155) 0px 0px 0px;  
     }
 }//Animation du box-shadow de la boite modale des cours
+
+// Animation des Lire la suite 
+.cours__desc__ouvrir{
+    animation: rotate 2s linear infinite;
+  }
+  
+  // Keyframes 
+  @keyframes rotate {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+  
+  
+  
