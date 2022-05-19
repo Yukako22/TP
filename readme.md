@@ -11,5 +11,12 @@ Création d'une classe pour les images de la galerie pour avoir un hover sur cha
 Ajout de bcp d'opacity pour avoir une profondeur au site.
 Retrait de la carte google map lorsqu'On va en mode mobile.
 Lisibilité des textes.
+
+Epreuve Finale : 
+Ajout de 4 pages d'atelier
+Svg en dans le bottom
+Correction de la mise en page du menu
+Ajout du template atelier
+Affichage de la description
 Pour modifier readme.md
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax

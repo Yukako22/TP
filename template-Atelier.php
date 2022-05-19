@@ -23,13 +23,8 @@
                <p><?php the_field('description_de_l’atelier_')?> </p>
           </section>
           <p class="atelier__endroit">
-               <p>
-                    Durée d'une séance :<?php
-                    the_field('duree_d’une_seance_d’atelier');
-               ?></p>
-               <p> Heure de début :<?php
-                    the_field('heure_de_debut');
-               ?></p>
+               <p>Durée d'une séance : <?php the_field('duree_d’une_seance_d’atelier');?></p>
+               <p> Heure de début :<?php the_field('heure_de_debut');?></p>
                <p>Heure de fin :<?php
                     the_field('heure_de_fin_');
                ?></p>
