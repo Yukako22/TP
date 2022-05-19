@@ -13,6 +13,10 @@
 <?php
     wp_nav_menu(array("menu"=>"evenement",
                 "container"=>"nav"));
+?>
+<?php
+    wp_nav_menu(array("menu"=>"atelier",
+                "container"=>"nav"));
 ?> 
    <?php if (have_posts()): the_post(); ?>
         <h1><?php the_title() ?></h1>    
